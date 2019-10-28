@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/css/bulma/css/bulma.min.css">            
+        <link rel="stylesheet" type="text/css" href="/css/bulma/css/bulma.min.css">
         <title>OTP App</title>
         <!-- Fonts -->
         <style>
@@ -67,67 +67,61 @@
         </style>
     </head>
     <body>
-        <section class="section has-text-centered">
-            <div class="container">
-                  <div>
-                      <h1 class="title has-text-centered">
-                        otp-app
-                      </h1>
-                      <p class="subtitle has-text-centered">
-                        browser otp generator
-                      </p>
-                  </div>
-            </div>
-        </section>
-        <section class="section has-text-centered">
-            <div class="container">
-                <div class="box">
-                    <h3 class="title is-3">
-                        Your OTP is:
-                    </h3>
-                    <h4 class="title is-4">
-                        <span class="has-text-success" id="otp">5427c6b3d65a454080bc66be4becdf10</span>
-                    </h4>
+        <div id="app">
+            <section class="section has-text-centered">
+                <div class="container">
+                      <div>
+                          <h1 class="title has-text-centered">
+                            otp-app
+                          </h1>
+                          <p class="subtitle has-text-centered">
+                            browser otp generator
+                          </p>
+                      </div>
                 </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="columns has-text-centered has-text-info">
-                    <div class="column">
-                        <div class="box">
-                            <h4 class="title is-4 has-text-info">param-1</h4>
-                            <h5 class="title is-5 has-text-info">value-1</h5>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="box">
-                                <h4 class="title is-4 has-text-danger">param-2</h4>
-                                <h5 class="title is-5 has-text-danger">value-2</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="columns has-text-black has-text-centered">
+            </section>
+            <one-time-password></one-time-password>
+            <section class="section">
+                <div class="container">
+                    <div class="columns has-text-centered has-text-info">
                         <div class="column">
-                            <div class="select is-large">
-                              <select>
-                                <option>HOTP</option>
-                                <option>TOTP</option>
-                              </select>
+                            <div class="box">
+                                <h4 class="title is-4 has-text-info">param-1</h4>
+                                <h5 class="title is-5 has-text-info">value-1</h5>
                             </div>
                         </div>
                         <div class="column">
-                            <input type="text" class="input is-large" placeholder="passphrase">
+                            <div class="box">
+                                    <h4 class="title is-4 has-text-danger">param-2</h4>
+                                    <h5 class="title is-5 has-text-danger">value-2</h5>
+                            </div>
                         </div>
-                        <div class="column">
-                            <button class="button is-primary is-large">Submit</button>
-                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="box">
+                        <div class="columns has-text-black has-text-centered">
+                            <div class="column">
+                                <div class="select is-large">
+                                  <select>
+                                    <option>HOTP</option>
+                                    <option>TOTP</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <input type="text" class="input is-large" placeholder="passphrase">
+                            </div>
+                            <div class="column">
+                                <button class="button is-primary is-large">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <script type="text/javascript" src="js/app.js"></script>            
     </body>
 </html>
