@@ -15,6 +15,7 @@ window.Vue = require('vue');
 
 Vue.component('one-time-password', require('./components/OneTimePassword.vue').default);
 Vue.component('param-column', require('./components/ParamColumn.vue').default);
+Vue.component('inputs', require('./components/Inputs.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
