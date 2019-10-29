@@ -84,18 +84,8 @@
             <section class="section">
                 <div class="container">
                     <div class="columns has-text-centered has-text-info">
-                        <div class="column">
-                            <div class="box">
-                                <h4 class="title is-4 has-text-info">param-1</h4>
-                                <h5 class="title is-5 has-text-info">value-1</h5>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="box">
-                                    <h4 class="title is-4 has-text-danger">param-2</h4>
-                                    <h5 class="title is-5 has-text-danger">value-2</h5>
-                            </div>
-                        </div>
+                        <param-column></param-column>
+                        <param-column></param-column>
                     </div>
                 </div>
             </section>
