@@ -6,7 +6,7 @@
                     Your OTP is:
                 </h3>
                 <h4 class="title is-4">
-                    <span class="has-text-success" id="otp">5427c6b3d65a454080bc66be4becdf10</span>
+                    <span class="has-text-success" id="otp">{{ otp }}</span>
                 </h4>
             </div>
         </div>
@@ -15,8 +15,10 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data() {
+            return {
+                otp: "Not generated yet!",
+            }
         }
     }
 </script>
