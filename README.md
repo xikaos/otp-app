@@ -1,5 +1,11 @@
 # otp-app
 
+## Setup
+1. Tenha o docker instalado.
+2. Tenha o docker-compose instalado.
+3. docker-compose up
+4. Abra o navegador com localhost.
+
 ## Objetivo
 O objetivo da aplicação é demonstrar na prática o OTP e demonstrar possíveis ataques contra sua arquitetura e implementação.
 
