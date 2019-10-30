@@ -32,6 +32,6 @@
     assets:
       image: ambientum/node:11
       container_name: otp-assets
-      command: tail -f /dev/null
+      command: npm run watch
       volumes:
         - .:/var/www/app
